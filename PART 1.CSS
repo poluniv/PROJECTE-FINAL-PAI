@@ -1,13 +1,14 @@
 /* PART 1: */
 h1{
     font-family: Arial;
-    background-color:aquamarine;
+    background-color: white;
 }
 
 body{
     font-family: Arial, sans-serif;
     font-weight: normal;
-    background-color: gray;
+    font-style:italic;
+    background-color:white;
     margin:0;
-    padding: 30px 15px;
+    padding: 20px 15px;
 }
