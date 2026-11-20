@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTE FINAL PAI</title>
+    <link href= "PART 2.CSS" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1> Anàlisi de dades obertes d'accidents de trànsit de Barcelona.</h1>
+    
+    <script src="PART 2.JS"></script>
+    <p>""</p>
+
+
+<!-- ------------------------- -->
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projecte acadèmic per analitzar dades obertes d'accidents de trànsit de Barcelona.">
+  <title>Anàlisi d'accidents de trànsit a Barcelona | PAI</title>
+  <link rel="stylesheet" href="css/PART 2 STYLE.css">
+  <link rel="stylesheet" href="css/PART 2 ESTUDIANTS.css">
+  <script src="js/PART 2 SCRIPT.js" defer></script>
+  <script src="js/PART 2 ESTUDIANTS.js" defer></script>
+</head>
+<body>
+  <header class="capcalera">
+    <div class="contenidor capcalera-contingut">
+      <p class="etiqueta">UAB · Programació d'Aplicacions a Internet</p>
+      <h1>Anàlisi d'accidents de trànsit a Barcelona</h1>
+      <p class="introduccio">
+        Explora dades obertes reals sobre accidents de trànsit de Barcelona
+        mitjançant JavaScript i els exercicis proposats pel professorat.
+      </p>
+    </div>
+  </header>
+
+  <main class="contenidor">
+    <section class="panell carrega" id="carrega" aria-labelledby="titol-carrega">
+      <div class="seccio-text">
+        <p class="numero">01</p>
+        <div>
+          <h2 id="titol-carrega">Carrega les dades</h2>
+          <p>Selecciona un fitxer CSV oficial de l'Ajuntament de Barcelona.</p>
+        </div>
+      </div>
+
+      <div class="controls-carrega">
+        <label class="selector-fitxer" for="file-input">
+          Selecciona el CSV
+          <span>Format admès: .csv</span>
+        </label>
+        <input type="file" id="file-input" name="fitxer-csv" accept=".csv,text/csv">
+
+        <div class="indicador-any" aria-label="Any de les dades carregades">
+          <span>Any carregat</span>
+          <output id="any">Sense dades</output>
+        </div>
+      </div>
+
+      <p id="carrega-estat" class="missatge-estat" role="status" aria-live="polite">
+        Encara no s'ha carregat cap fitxer. Comença seleccionant el CSV de 2025.
+      </p>
+    </section>
+
+    <section class="espai-treball" id="exercicis" aria-labelledby="titol-exercicis">
+      <nav class="panell menu-exercicis" id="menu" aria-labelledby="titol-exercicis">
+        <div class="seccio-text">
+          <p class="numero">02</p>
+          <div>
+            <h2 id="titol-exercicis">Exercicis</h2>
+            <p>Completa cada funció a <code>js/estudiants.js</code>.</p>
+          </div>
+        </div>
+
+        <ol class="llista-exercicis">
+          <li>
+            <a href="#resultats" id="exer01">
+              <span>Exercici 01</span>
+              Nombre total d'accidents
+            </a>
+          </li>
+          <li>
+            <a href="#resultats" id="exer02">
+              <span>Exercici 02</span>
+              Dia de la setmana amb més accidents
+            </a>
+          </li>
+          <li>
+            <a href="#resultats" id="exer03">
+              <span>Exercici 03</span>
+              Accidents per districte
+            </a>
+          </li>
+          <li>
+            <a href="#resultats" id="exer04">
+              <span>Exercici 04</span>
+              Dades d'un districte seleccionat
+            </a>
+          </li>
+        </ol>
+      </nav>
+
+      <section class="panell contingut" id="contingut" aria-labelledby="titol-resultats">
+        <div class="resultats-capcalera">
+          <div>
+            <p class="numero">03</p>
+            <h2 id="titol-resultats">Resultats</h2>
+          </div>
+          <span class="estat-inicial">Àrea de treball</span>
+        </div>
+
+        <div id="resultats" class="resultats" aria-live="polite" aria-atomic="true">
+          <p class="estat-buit">
+            Carrega un fitxer CSV i activa la funcionalitat d'un exercici per
+            visualitzar-ne els resultats aquí.
+          </p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contenidor peu">
+      <p>Projecte acadèmic · PAI · Grau en Gestió de Ciutats Intel·ligents i Sostenibles</p>
+      <p>
+        Dades:
+        <a href="https://opendata-ajuntament.barcelona.cat/data/ca/dataset/accidents_causa_conductor_gu_bcn">
+          Open Data BCN
+        </a>
+        · Universitat Autònoma de Barcelona
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
